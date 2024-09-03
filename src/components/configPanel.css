@@ -1,0 +1,14 @@
+.config-panel {
+    padding: 20px;
+    background: #f5f5f5;
+  }
+  
+  .input-group {
+    margin-bottom: 10px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
