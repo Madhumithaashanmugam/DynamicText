@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import './TextBox.css';
+import '../App.css'; 
 
 const TextBox = ({
-  id,
   text,
   x,
   y,
@@ -29,18 +28,20 @@ const TextBox = ({
     <div
       className="text-box"
       style={{
+        position: 'absolute',
         left: `${x}px`,
         top: `${y}px`,
         width: `${width}px`,
         height: `${height}px`,
-        textAlign,
-        fontStyle,
-        fontWeight,
-        textDecoration,
+        textAlign: textAlign,
+        fontStyle: fontStyle,
+        fontWeight: fontWeight,
+        textDecoration: textDecoration,
         color: fillColor,
         borderColor: strokeColor,
         fontSize: `${fontSize}px`,
         border: `2px solid ${strokeColor}`,
+        zIndex: 10 // Ensure text box is above the video
       }}
     >
       <input
